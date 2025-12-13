@@ -1,19 +1,24 @@
 import * as vscode from "vscode";
 import { telemetry, initializeTelemetry } from "./telemetry";
 import { CreateArchitectureCommand } from "./commands/create-architecture";
+import { SelectModelCommand } from "./commands/select-model";
 
 export function activate(context: vscode.ExtensionContext): void {
     initializeTelemetry();
-    registerCommand(context);
+    registerCommands(context);
     telemetry.sendTelemetryEvent("extensionActivated");
 }
 
-function registerCommand(context: vscode.ExtensionContext): void {
-    const disposable = vscode.commands.registerCommand("swark.architecture", async () => {
+function registerCommands(context: vscode.ExtensionContext): void {
+    const architectureCommand = vscode.commands.registerCommand("swark.architecture", async () => {
         await CreateArchitectureCommand.run();
     });
 
-    context.subscriptions.push(disposable);
+    const selectModelCommand = vscode.commands.registerCommand("swark.selectModel", async () => {
+        await SelectModelCommand.run();
+    });
+
+    context.subscriptions.push(architectureCommand, selectModelCommand);
 }
 
 export async function deactivate(): Promise<void> {

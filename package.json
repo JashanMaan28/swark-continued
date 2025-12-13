@@ -34,6 +34,10 @@
             {
                 "command": "swark.architecture",
                 "title": "Swark: Create Architecture Diagram"
+            },
+            {
+                "command": "swark.selectModel",
+                "title": "Swark: Select Language Model"
             }
         ],
         "configuration": {
@@ -92,22 +96,8 @@
                 },
                 "swark.languageModel": {
                     "type": "string",
-                    "markdownDescription": "Language model to use for diagram generation.",
-                    "default": "gpt-4o",
-                    "enum": [
-                        "gpt-4o",
-                        "claude-3.5-sonnet",
-                        "o1-ga",
-                        "o3-mini",
-                        "gemini-2.0-flash"
-                    ],
-                    "enumDescriptions": [
-                        "GPT 4o",
-                        "Claude 3.5 Sonnet",
-                        "OpenAI o1",
-                        "OpenAI o3-mini",
-                        "Gemini 2.0 Flash"
-                    ]
+                    "markdownDescription": "Language model family to use for diagram generation. Available models are dynamically fetched from GitHub Copilot.",
+                    "default": "gpt-4o"
                 },
                 "swark.fixMermaidCycles": {
                     "type": "boolean",

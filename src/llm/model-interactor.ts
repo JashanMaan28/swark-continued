@@ -77,12 +77,17 @@ export class ModelInteractor {
         alternativeModelFamily: string,
         availableModels: vscode.LanguageModelChat[]
     ): void {
-        vscode.window.showInformationMessage(
-            `Configured model "${configuredModelFamily}" is not available. Using "${alternativeModelFamily}" instead. ` +
-                `You can change this in "swark.languageModel" setting. Available models: ${this.availableModelsToString(
-                    availableModels
-                )}`
-        );
+        vscode.window
+            .showInformationMessage(
+                `Configured model "${configuredModelFamily}" is not available. Using "${alternativeModelFamily}" instead. ` +
+                    `Available models: ${this.availableModelsToString(availableModels)}`,
+                "Select Model"
+            )
+            .then((selection) => {
+                if (selection === "Select Model") {
+                    vscode.commands.executeCommand("swark.selectModel");
+                }
+            });
     }
 
     private static sendModelSelectedTelemetry(
