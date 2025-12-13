@@ -96,7 +96,7 @@
                 },
                 "swark.languageModel": {
                     "type": "string",
-                    "markdownDescription": "Language model family to use for diagram generation. Available models are dynamically fetched from GitHub Copilot.",
+                    "markdownDescription": "Language model family to use for diagram generation. Available models are dynamically fetched from GitHub Copilot.\n\n**Runtime Validation**: The extension validates this value at runtime against available GitHub Copilot models. If the configured model is unavailable, it will automatically fall back to the default model (`gpt-4o`) with a notification.\n\nUse the `Swark: Select Language Model` command to see and select from all available models.",
                     "default": "gpt-4o"
                 },
                 "swark.fixMermaidCycles": {

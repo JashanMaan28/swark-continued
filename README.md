@@ -67,7 +67,8 @@ Simply install Swark via the [VS Code Extension Marketplace](https://marketplace
 
 **Selecting a Language Model:**
 - Run **Swark: Select Language Model** from the Command Palette to see all available GitHub Copilot models and select your preferred one.
-- The list of available models is fetched dynamically from your GitHub Copilot installation.
+- The list of available models is fetched dynamically from your GitHub Copilot installation at runtime.
+- If you manually configure a model name in settings that isn't available, Swark will automatically fall back to the default (`gpt-4o`) and notify you with available options.
 
 <h1 align="center">
     <a href="https://github.com/user-attachments/assets/5b885430-d958-47a0-9daa-f64542844fba"><img src="https://github.com/swark-io/swark/raw/main/assets/demo.gif" width="85%" alt="Swark Demo"/></a>
@@ -112,7 +113,7 @@ This extension contributes the following settings:
 | `swark.maxFiles`         | Max number of files to read.<br>The number of files read is also affected by the LLM max token limit.                                    |
 | `swark.fileExtensions`   | List of file extensions to include in search.                                                                                            |
 | `swark.excludePatterns`  | List of glob patterns to exclude from file search.<br>Defaults include: `**/.*` for hidden files, `**/node_modules/**` for node modules. |
-| `swark.languageModel`    | Language model family to use for diagram generation.<br>Use the "Swark: Select Language Model" command to see and select from all available models dynamically. |
+| `swark.languageModel`    | Language model family to use for diagram generation (e.g., `gpt-4o`, `claude-3.5-sonnet`).<br>**Runtime Validation:** The extension validates this value at runtime against available GitHub Copilot models. If unavailable, it automatically falls back to `gpt-4o` with a notification.<br>**Recommended:** Use the `Swark: Select Language Model` command to see and select from all currently available models. |
 | `swark.fixMermaidCycles` | Automatically fix cycles in the generated Mermaid diagram to prevent rendering failures.                                                 |
 
 ## Release Notes
