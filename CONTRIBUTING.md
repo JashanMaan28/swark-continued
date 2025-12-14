@@ -1,7 +1,10 @@
-# Contributing to Swark
+# Contributing to Swark Continued
 
-Thank you for your interest in contributing to Swark!  
-Swark welcomes contributions. There are multiple ways to contribute:
+Thank you for your interest in contributing to Swark Continued!  
+
+**Note**: This is a community-maintained fork of the original [Swark project](https://github.com/swark-io/swark). Contributions to this fork help maintain and improve the extension for the community.
+
+Swark Continued welcomes contributions. There are multiple ways to contribute:
 
 1. Submit pull requests for open issues.
 2. Report bugs.
@@ -9,7 +12,7 @@ Swark welcomes contributions. There are multiple ways to contribute:
 
 ## Code Contribution
 
-You are welcome to submit pull requests for [open issues](https://github.com/swark-io/swark/issues).  
+You are welcome to submit pull requests for [open issues](https://github.com/JashanMaan28/swark-continued/issues).  
 Issues that have been reviewed and are **ready to accept PRs** are labeled as `planned`.  
 Issues that are labeled as `backlog` are currently not planned and will be considered in the future.
 
@@ -18,8 +21,8 @@ Issues that are labeled as `backlog` are currently not planned and will be consi
 1. Fork and clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/swark.git
-cd swark
+git clone https://github.com/YOUR-USERNAME/swark-continued.git
+cd swark-continued
 ```
 
 2. Install dependencies:
@@ -58,13 +61,14 @@ git push
 
 ## Requesting Features
 
-Create a [new issue](https://github.com/swark-io/swark/issues/new) and label it with `enhancement`.
+Create a [new issue](https://github.com/JashanMaan28/swark-continued/issues/new) and label it with `enhancement`.
 
 ## Reporting Bugs
 
-Create a [new issue](https://github.com/swark-io/swark/issues/new) and label it with `bug`.  
-Alternatively, you can report the bug via email: contact@swark.io
+Create a [new issue](https://github.com/JashanMaan28/swark-continued/issues/new) and label it with `bug`.
 
 ## Questions?
 
-Feel free to email us at contact@swark.io.
+For questions about this fork, please [open a discussion](https://github.com/JashanMaan28/swark-continued/discussions) or create an issue.
+
+For questions about the original Swark project, visit: https://github.com/swark-io/swark

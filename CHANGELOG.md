@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/swark-io/swark/compare/v1.4.3...main)
+---
+
+## 🔄 Swark Continued Fork
+
+**Note**: This is a community-maintained fork of the original [Swark project](https://github.com/swark-io/swark). Changes below this line are specific to the fork.
+
+## [Unreleased] - Swark Continued
 
 ### Added
 
@@ -18,6 +24,63 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 -   N/A
+
+## [1.5.0](https://github.com/JashanMaan28/swark-continued/releases/tag/v1.5.0) - 2025-12-13
+
+### Added
+
+-   **Dynamic Model Selection Command**: New `Swark Continued: Select Language Model` command that displays all currently available GitHub Copilot models
+    -   Shows model details: name, version, max input tokens, and vendor
+    -   Highlights currently selected model with a checkmark
+    -   Validates selection after configuration update
+-   **Runtime Validation**: Comprehensive validation for `swark-continued.languageModel` configuration
+    -   Validates model availability at runtime against GitHub Copilot's current models
+    -   Three-tier fallback strategy: configured → default (`gpt-4o`) → first available
+    -   Distinguishes between fallback scenarios with appropriate warning/error levels
+-   **Enhanced Error Messages**: Clear, actionable feedback when configured models are unavailable
+    -   Lists all currently available models in error messages
+    -   Provides action buttons: "Select Model" and "Settings"
+    -   Different message types (warning/error) based on fallback severity
+
+### Changed
+
+-   **FORK CREATED**: Community-maintained fork "Swark Continued" created by Jashanpreet Singh (JashanMaan28)
+-   Rebranded extension to "Swark Continued" to distinguish from original project
+-   Updated extension ID to `JashanMaan28.swark-continued`
+-   Changed command namespace from `swark.*` to `swark-continued.*`
+-   Changed configuration namespace from `swark.*` to `swark-continued.*`
+-   Updated all repository references to `https://github.com/JashanMaan28/swark-continued`
+-   Removed hardcoded `enum` constraint from language model setting for forward compatibility with new models
+-   Enhanced settings documentation explaining runtime validation and fallback behavior
+-   Updated all documentation for fork branding (README, CONTRIBUTING, CHANGELOG)
+
+### Inherited from Original Swark v1.4.3
+
+-   Automatic Mermaid cycle fix capability to prevent diagram rendering issues
+-   Support for `lua` and `dart` programming languages
+-   Support for Gemini 2.0 Flash and OpenAI o3-mini language models
+-   Link to change configured language model in output
+-   GitHub Copilot extension set as dependency
+
+### Configuration
+
+-   Removed hardcoded `enum` constraint from language model setting for forward compatibility
+-   Configuration namespace: `swark-continued.*` (changed from `swark.*`)
+-   Commands: `swark-continued.architecture` and `swark-continued.selectModel`
+
+### Maintained
+
+-   All original functionality preserved
+-   AGPL-3.0 license maintained
+-   Full attribution to original Swark team
+-   Compatible with VS Code 1.91.0+
+-   Requires GitHub Copilot extension
+
+---
+
+## Original Swark Project Changelog
+
+The following entries are from the original Swark project. For the latest original project updates, visit: https://github.com/swark-io/swark
 
 ## [1.4.3](https://github.com/swark-io/swark/compare/v1.4.2...v1.4.3) - 2025-03-21
 
@@ -61,7 +124,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Updated multiple sections of README.md.
 -   Reduce extension size by removing `demo.gif` from package.
--   Throw an error when no files found in the selected folder, and instruct to update the `swark.fileExtensions` setting.
+-   Throw an error when no files found in the selected folder, and instruct to update the file extensions setting.
 
 ## [1.3.7](https://github.com/swark-io/swark/compare/v1.3.6...v1.3.7) - 2025-01-09
 
@@ -119,7 +182,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   Support additional language models: `gpt-4o`, `openai-o1`, `claude-3.5-sonnet`.
--   Users can now configure the language model to use via the `swark.languageModel` setting.
+-   Users can now configure the language model to use via the language model setting.
 
 ### Changed
 
@@ -130,4 +193,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   Initial release of Swark VS Code extension.
--   Extension contributes `swark.architecture` command to automatically create an architecture diagram from code.
+-   Extension contributes architecture command to automatically create an architecture diagram from code.

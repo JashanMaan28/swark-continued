@@ -31,13 +31,13 @@ export class ModelInteractor {
     }
 
     private static getConfiguredModel(): string {
-        const config = vscode.workspace.getConfiguration("swark");
+        const config = vscode.workspace.getConfiguration("swark-continued");
         const configuredModel = config.get<string>("languageModel");
         console.log("configuredModel: " + configuredModel);
 
         if (!configuredModel || configuredModel.trim() === "") {
             throw new Error(
-                'Language model is not configured. Please set "swark.languageModel" setting or run "Swark: Select Language Model" command.'
+                'Language model is not configured. Please set "swark-continued.languageModel" setting or run "Swark Continued: Select Language Model" command.'
             );
         }
 
@@ -45,7 +45,7 @@ export class ModelInteractor {
         if (configuredModel.length > 100) {
             vscode.window.showWarningMessage(
                 `Configured model name "${configuredModel.substring(0, 50)}..." is unusually long. ` +
-                    `Please verify your "swark.languageModel" setting or use "Swark: Select Language Model" to choose a valid model.`
+                    `Please verify your "swark-continued.languageModel" setting or use "Swark Continued: Select Language Model" to choose a valid model.`
             );
         }
 
@@ -108,16 +108,16 @@ export class ModelInteractor {
             `The configured language model "${configuredModelFamily}" is not available from GitHub Copilot. ` +
             `${explanation} Using "${alternativeModelFamily}" instead.\n\n` +
             `Available models: ${this.availableModelsToString(availableModels)}\n\n` +
-            `To select a valid model, click "Select Model" below or run the "Swark: Select Language Model" command.`;
+            `To select a valid model, click "Select Model" below or run the "Swark Continued: Select Language Model" command.`;
 
         const showMessage =
             messageType === "warning" ? vscode.window.showWarningMessage : vscode.window.showErrorMessage;
 
         showMessage(message, "Select Model", "Settings").then((selection) => {
             if (selection === "Select Model") {
-                vscode.commands.executeCommand("swark.selectModel");
+                vscode.commands.executeCommand("swark-continued.selectModel");
             } else if (selection === "Settings") {
-                vscode.commands.executeCommand("workbench.action.openSettings", "swark.languageModel");
+                vscode.commands.executeCommand("workbench.action.openSettings", "swark-continued.languageModel");
             }
         });
     }

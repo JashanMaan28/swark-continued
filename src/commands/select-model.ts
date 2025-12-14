@@ -23,7 +23,7 @@ export class SelectModelCommand {
             }
 
             // Get current configured model
-            const config = vscode.workspace.getConfiguration("swark");
+            const config = vscode.workspace.getConfiguration("swark-continued");
             const currentModel = config.get<string>("languageModel") || "gpt-4o";
 
             // Create quick pick items from available models
@@ -54,8 +54,8 @@ export class SelectModelCommand {
 
             // Show quick pick with information about dynamic fetching
             const selectedItem = await vscode.window.showQuickPick(modelItems, {
-                placeHolder: `Select a language model for Swark (${modelItems.length} models available from GitHub Copilot)`,
-                title: "Swark: Select Language Model",
+                placeHolder: `Select a language model for Swark Continued (${modelItems.length} models available from GitHub Copilot)`,
+                title: "Swark Continued: Select Language Model",
                 matchOnDescription: true,
                 matchOnDetail: true,
             });
@@ -64,7 +64,7 @@ export class SelectModelCommand {
                 const selectedFamily = selectedItem.model.family;
 
                 // Update the configuration
-                const config = vscode.workspace.getConfiguration("swark");
+                const config = vscode.workspace.getConfiguration("swark-continued");
                 await config.update("languageModel", selectedFamily, vscode.ConfigurationTarget.Global);
 
                 // Validate the selection
@@ -72,12 +72,12 @@ export class SelectModelCommand {
 
                 if (isValid) {
                     vscode.window.showInformationMessage(
-                        `✓ Swark language model successfully set to: ${selectedFamily}`
+                        `✓ Swark Continued language model successfully set to: ${selectedFamily}`
                     );
                 } else {
                     vscode.window.showWarningMessage(
                         `Model "${selectedFamily}" was set but may not be currently available. ` +
-                            `Swark will use a fallback model if needed.`
+                            `Swark Continued will use a fallback model if needed.`
                     );
                 }
             }

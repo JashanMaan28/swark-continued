@@ -1,19 +1,18 @@
 {
-    "name": "swark",
-    "displayName": "Swark",
-    "description": "Create architecture diagrams from code automatically using LLMs",
-    "version": "1.4.3",
-    "publisher": "swark",
+    "name": "swark-continued",
+    "displayName": "Swark Continued",
+    "description": "Create architecture diagrams from code automatically using LLMs (Community-maintained fork of Swark)",
+    "version": "1.5.0",
+    "publisher": "JashanMaan28",
     "icon": "assets/logo/swark-icon.png",
     "license": "SEE LICENSE IN LICENSE",
-    "homepage": "https://swark.io",
+    "homepage": "https://github.com/JashanMaan28/swark-continued",
     "bugs": {
-        "url": "https://github.com/swark-io/swark/issues",
-        "email": "contact@swark.io"
+        "url": "https://github.com/JashanMaan28/swark-continued/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/swark-io/swark.git"
+        "url": "https://github.com/JashanMaan28/swark-continued.git"
     },
     "engines": {
         "vscode": "^1.91.0"
@@ -32,23 +31,23 @@
     "contributes": {
         "commands": [
             {
-                "command": "swark.architecture",
-                "title": "Swark: Create Architecture Diagram"
+                "command": "swark-continued.architecture",
+                "title": "Swark Continued: Create Architecture Diagram"
             },
             {
-                "command": "swark.selectModel",
-                "title": "Swark: Select Language Model"
+                "command": "swark-continued.selectModel",
+                "title": "Swark Continued: Select Language Model"
             }
         ],
         "configuration": {
-            "title": "Swark",
+            "title": "Swark Continued",
             "properties": {
-                "swark.maxFiles": {
+                "swark-continued.maxFiles": {
                     "type": "number",
                     "default": 1000,
                     "description": "Max number of files to read. The number of files read is also affected by the LLM max token limit."
                 },
-                "swark.fileExtensions": {
+                "swark-continued.fileExtensions": {
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -82,7 +81,7 @@
                     ],
                     "description": "List of file extensions to include in search."
                 },
-                "swark.excludePatterns": {
+                "swark-continued.excludePatterns": {
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -94,12 +93,12 @@
                     ],
                     "description": "List of glob patterns to exclude from file search."
                 },
-                "swark.languageModel": {
+                "swark-continued.languageModel": {
                     "type": "string",
-                    "markdownDescription": "Language model family to use for diagram generation. Available models are dynamically fetched from GitHub Copilot.\n\n**Runtime Validation**: The extension validates this value at runtime against available GitHub Copilot models. If the configured model is unavailable, it will automatically fall back to the default model (`gpt-4o`) with a notification.\n\nUse the `Swark: Select Language Model` command to see and select from all available models.",
+                    "markdownDescription": "Language model family to use for diagram generation. Available models are dynamically fetched from GitHub Copilot.\n\n**Runtime Validation**: The extension validates this value at runtime against available GitHub Copilot models. If the configured model is unavailable, it will automatically fall back to the default model (`gpt-4o`) with a notification.\n\nUse the `Swark Continued: Select Language Model` command to see and select from all available models.",
                     "default": "gpt-4o"
                 },
-                "swark.fixMermaidCycles": {
+                "swark-continued.fixMermaidCycles": {
                     "type": "boolean",
                     "default": true,
                     "description": "Automatically fix cycles in the generated Mermaid diagram to prevent rendering failures."
@@ -108,7 +107,7 @@
         },
         "keybindings": [
             {
-                "command": "swark.architecture",
+                "command": "swark-continued.architecture",
                 "key": "ctrl+shift+r",
                 "mac": "cmd+shift+r",
                 "when": "editorTextFocus"

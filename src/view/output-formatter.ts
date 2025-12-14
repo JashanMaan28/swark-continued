@@ -17,23 +17,23 @@ export class OutputFormatter {
         const linkGenerator = new MermaidLinkGenerator(mermaidCode);
 
         return `<p align="center">
-    <a href="https://swark.io">
+    <a href="https://github.com/JashanMaan28/swark-continued">
         <img src="https://raw.githubusercontent.com/swark-io/swark/refs/heads/main/assets/logo/swark-logo-dark-mode.png" width="10%" />
     </a>
 </p>
 <p align="center">
     <b>Automatic Architecture Diagrams from Code</b><br />
-    <a href="https://github.com/swark-io/swark">GitHub</a> • <a href="https://swark.io">Website</a> • <a href="mailto:contact@swark.io">Contact Us</a>
+    <a href="https://github.com/JashanMaan28/swark-continued">GitHub (Fork)</a> • <a href="https://github.com/swark-io/swark">Original Project</a>
 </p>
 
 ## Usage Instructions
 
 1. **Render the Diagram**: Use the links below to open it in Mermaid Live Editor, or install the [Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) extension.
-2. **Recommended Model**: If available for you, use \`claude-3.5-sonnet\` [language model](vscode://settings/swark.languageModel). It can process more files and generates better diagrams.
+2. **Recommended Model**: If available for you, use \`gemini\` [language model](vscode://settings/swark-continued.languageModel). It can process more files and generates better diagrams.
 3. **Iterate for Best Results**: Language models are non-deterministic. Generate the diagram multiple times and choose the best result.
 
 ## Generated Content
-**Model**: ${modelName} - [Change Model](vscode://settings/swark.languageModel)  
+**Model**: ${modelName} - [Change Model](vscode://settings/swark-continued.languageModel)  
 **Mermaid Live Editor**: [View](${linkGenerator.createViewLink()}) | [Edit](${linkGenerator.createEditLink()})
 
 ${mermaidBlock}`;
@@ -58,7 +58,7 @@ ${mermaidBlock}`;
     private static fixCycles(mermaidCode: string): string | null {
         const cycleDetector = new MermaidCycleDetector(mermaidCode);
         const cycles = cycleDetector.detectCycles();
-        const isCycleFixEnabled = vscode.workspace.getConfiguration("swark").get<number>("fixMermaidCycles");
+        const isCycleFixEnabled = vscode.workspace.getConfiguration("swark-continued").get<number>("fixMermaidCycles");
 
         if (cycles && isCycleFixEnabled) {
             const fixedMermaidCode = cycleDetector.fixCycles(cycles);

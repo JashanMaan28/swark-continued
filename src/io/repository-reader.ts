@@ -13,7 +13,7 @@ export class RepositoryReader {
     public constructor(baseFolder: vscode.Uri, tokenCounter: TokenCounter, maxTokens: number) {
         this.baseFolder = baseFolder;
         this.tokenCounter = tokenCounter;
-        this.config = vscode.workspace.getConfiguration("swark");
+        this.config = vscode.workspace.getConfiguration("swark-continued");
         this.maxTokens = maxTokens;
     }
 
@@ -32,7 +32,7 @@ export class RepositoryReader {
             this.sendNoFilesFoundTelemetry();
             throw new Error(
                 "The selected folder does not contain any file that matches the configured file types. " +
-                    'You can update the supported types in "swark.fileExtensions" setting.'
+                    'You can update the supported types in "swark-continued.fileExtensions" setting.'
             );
         }
 

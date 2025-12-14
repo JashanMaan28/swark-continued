@@ -6,7 +6,7 @@ export async function selectFolder(): Promise<vscode.Uri> {
         canSelectFolders: true,
         canSelectFiles: false,
         canSelectMany: false,
-        openLabel: "Select Folder for Swark",
+        openLabel: "Select Folder for Swark-Continued",
     });
     const selectedFolder = selectedFolders?.[0];
 

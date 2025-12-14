@@ -1,9 +1,9 @@
 <h1 align="center">
-  <a href="https://swark.io">
+  <a href="https://github.com/JashanMaan28/swark-continued">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/logo/swark-logo-dark-mode.png">
       <source media="(prefers-color-scheme: light)" srcset="assets/logo/swark-logo-light-mode.png">
-      <img alt="Swark logo" src="assets/logo/swark-logo-light-mode.png" width="30%">
+      <img alt="Swark Continued logo" src="assets/logo/swark-logo-light-mode.png" width="30%">
     </picture>
   </a>
 </h1>
@@ -14,61 +14,76 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=swark.swark">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/swark.swark?label=Visual%20Studio%20Marketplace" /></a>
-  <a href="https://github.com/swark-io/swark/issues">
-    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/swark-io/swark" /></a>
-  <a href="https://github.com/swark-io/swark/blob/main/CONTRIBUTING.md">
+  <a href="https://marketplace.visualstudio.com/items?itemName=JashanMaan28.swark-continued">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/JashanMaan28.swark-continued?label=Visual%20Studio%20Marketplace" /></a>
+  <a href="https://github.com/JashanMaan28/swark-continued/issues">
+    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/JashanMaan28/swark-continued" /></a>
+  <a href="https://github.com/JashanMaan28/swark-continued/blob/main/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen" alt="PRs welcome!" />
   </a>
 </p>
 
-## Swark
+## ⚠️ About This Fork
 
-Swark is a VS Code extension that allows creating architecture diagrams from code automatically using large language models (LLMs).\
-Swark is **directly integrated with GitHub Copilot**, and requires no authentication or API key.
+**Swark Continued** is a community-maintained fork of the original [Swark](https://github.com/swark-io/swark) project by [swark.io](https://swark.io).
+
+This fork was created to ensure continued maintenance and development of this valuable tool. The original Swark project appears to be unmaintained, and this fork aims to:
+- Keep the extension compatible with the latest VS Code and GitHub Copilot updates
+- Address bug fixes and community requests
+- Maintain the AGPL-3.0 open-source license and spirit of the original project
+
+All credit for the original concept and implementation goes to the Swark team. This is simply a continuation of their excellent work.
+
+For the original project, visit: https://github.com/swark-io/swark
+
+---
+
+## Swark Continued
+
+Swark Continued is a VS Code extension that allows creating architecture diagrams from code automatically using large language models (LLMs).\
+Swark Continued is **directly integrated with GitHub Copilot**, and requires no authentication or API key.
 
 <h1 align="center">
     <img src="./assets/demo.png" width="85%"/>
 </h1>
 
-### Why Swark?
+### Why Swark Continued?
 
--   🌟 **Free and Open Source**: All you need is GitHub Copilot, which is now available for free. You can review Swark’s code to understand how it works, and contribute to make it better.
--   🌍 **Universal Language Support**: Classic code visualization solutions are deterministic and require to incrementally add support in new languages or frameworks. With Swark, all the “logic” is encapsulated within the LLM, and therefore it natively support all languages.
--   🔑 **Seamless Integration**: Swark integrates directly with GitHub Copilot. No additional setup, authentication, or API keys required.
+-   🌟 **Free and Open Source**: All you need is GitHub Copilot, which is now available for free. You can review Swark Continued's code to understand how it works, and contribute to make it better.
+-   🌍 **Universal Language Support**: Classic code visualization solutions are deterministic and require to incrementally add support in new languages or frameworks. With Swark Continued, all the "logic" is encapsulated within the LLM, and therefore it natively support all languages.
+-   🔑 **Seamless Integration**: Swark Continued integrates directly with GitHub Copilot. No additional setup, authentication, or API keys required.
 -   🛡️ **Privacy First**: Your source code is shared only with GitHub Copilot — no other external APIs or providers involved.
--   🧜‍♀️ **Mermaid.js**: Swark generates diagrams in Mermaid.js, a popular diagram-as-code framework. You can edit and refine the diagrams as needed.
+-   🧜‍♀️ **Mermaid.js**: Swark Continued generates diagrams in Mermaid.js, a popular diagram-as-code framework. You can edit and refine the diagrams as needed.
 
 ### Use Cases
 
 -   🔎 **Learn a New Codebase**: Instantly generate architecture diagrams to gain a high-level understanding of unfamiliar repositories. Ideal for onboarding and tackling new projects.
--   🤖 **Review AI-Generated Code**: As AI-generated projects become more common, Swark helps you quickly visualize their structure and ensure they meet your standards.
+-   🤖 **Review AI-Generated Code**: As AI-generated projects become more common, Swark Continued helps you quickly visualize their structure and ensure they meet your standards.
 -   📕 **Improve Documentation**: Keep your documentation fresh and detailed with up-to-date architecture diagrams that take minutes to create.
 -   🕰️ **Understand Legacy Code**: Quickly visualize and comprehend the structure of legacy codebases, making it easier to maintain and refactor.
 -   🧩 **Spot Design Flaws**: Visualize your repo’s dependency graph to identify unwanted dependencies or areas for optimization.
--   ✅ **Test Coverage Insights**: Include test files in Swark’s input to see test coverage at a glance and address gaps.
+-   ✅ **Test Coverage Insights**: Include test files in Swark Continued's input to see test coverage at a glance and address gaps.
 
 ## Requirements
 
--   **GitHub Copilot**: Swark is integrated with GitHub Copilot to invoke LLM queries. Install it via [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot). Notice that **GitHub Copilot now offers a free tier**.
+-   **GitHub Copilot**: Swark Continued is integrated with GitHub Copilot to invoke LLM queries. Install it via [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot). Notice that **GitHub Copilot now offers a free tier**.
 -   **[Optional] Mermaid Markdown Preview**: To preview the diagram in VS Code you can install the [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) extension. Alternatively, you can use the provided links to open it in Mermaid Live Editor.
 
 ## Installation
 
-Simply install Swark via the [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=swark.swark).
+Simply install Swark Continued via the [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=JashanMaan28.swark-continued).
 
 ## How to Use
 
-1. In VS Code, open the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) and run: **Swark: Create Architecture Diagram**.\
-   Alternatively, you can use Swark's default keybindings: `cmd+shift+r` (Mac) or `ctrl+shift+r` (Windows).
-2. Select a folder to use in Swark's file search.
+1. In VS Code, open the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) and run: **Swark Continued: Create Architecture Diagram**.\
+   Alternatively, you can use Swark Continued's default keybindings: `cmd+shift+r` (Mac) or `ctrl+shift+r` (Windows).
+2. Select a folder to use in Swark Continued's file search.
 3. Within a few seconds, a tab will open displaying your architecture diagram.
 
 **Selecting a Language Model:**
-- Run **Swark: Select Language Model** from the Command Palette to see all available GitHub Copilot models and select your preferred one.
+- Run **Swark Continued: Select Language Model** from the Command Palette to see all available GitHub Copilot models and select your preferred one.
 - The list of available models is fetched dynamically from your GitHub Copilot installation at runtime.
-- If you manually configure a model name in settings that isn't available, Swark will automatically fall back to the default (`gpt-4o`) and notify you with available options.
+- If you manually configure a model name in settings that isn't available, Swark Continued will automatically fall back to the default (`gpt-4o`) and notify you with available options.
 
 <h1 align="center">
     <a href="https://github.com/user-attachments/assets/5b885430-d958-47a0-9daa-f64542844fba"><img src="https://github.com/swark-io/swark/raw/main/assets/demo.gif" width="85%" alt="Swark Demo"/></a>
@@ -79,7 +94,7 @@ Simply install Swark via the [VS Code Extension Marketplace](https://marketplace
 Swark saves its output in `swark-output` folder under your workspace root folder.\
 On each run, Swark creates two output files:
 
--   **Diagram file**: Contains the diagram's Mermaid code. This file is presented when you run Swark.\
+-   **Diagram file**: Contains the diagram's Mermaid code. This file is presented when you run Swark Continued.\
     Filename: `<date>__<time>__diagram.md`
 -   **Log file**: Contains information about the run, configuration, and files used to create the diagram. Can be used for debugging and issue reporting.\
     Filename: `<date>__<time>__log.md`
@@ -95,9 +110,9 @@ workspace-root
 
 ## How it Works
 
-1. **File Retrieval**: Swark retrieves code files within the chosen folder. Swark automatically adjusts the number of retrieved files to match the LLM max token limit.
-2. **Prompt Building**: Based on the retrieved files, Swark builds a prompt to generate an architecture diagram. The code files are included in the prompt, together with instructions on how to build the diagram.
-3. **LLM Request**: Swark invokes LLM request to GitHub Copilot via VS Code [Language Model API](https://code.visualstudio.com/api/extension-guides/language-model).
+1. **File Retrieval**: Swark Continued retrieves code files within the chosen folder. Swark Continued automatically adjusts the number of retrieved files to match the LLM max token limit.
+2. **Prompt Building**: Based on the retrieved files, Swark Continued builds a prompt to generate an architecture diagram. The code files are included in the prompt, together with instructions on how to build the diagram.
+3. **LLM Request**: Swark Continued invokes LLM request to GitHub Copilot via VS Code [Language Model API](https://code.visualstudio.com/api/extension-guides/language-model).
 4. **Diagram Preview**: Upon a successful response, the diagram is presented. This is done by creating a markdown file that includes the diagram in [Mermaid](https://mermaid.js.org/) syntax and previewing it.
 
 ### Code Access and File Sharing
@@ -108,13 +123,13 @@ It's important to note that source code is **only shared with GitHub Copilot**, 
 
 This extension contributes the following settings:
 
-| Setting                  | Description                                                                                                                              |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `swark.maxFiles`         | Max number of files to read.<br>The number of files read is also affected by the LLM max token limit.                                    |
-| `swark.fileExtensions`   | List of file extensions to include in search.                                                                                            |
-| `swark.excludePatterns`  | List of glob patterns to exclude from file search.<br>Defaults include: `**/.*` for hidden files, `**/node_modules/**` for node modules. |
-| `swark.languageModel`    | Language model family to use for diagram generation (e.g., `gpt-4o`, `claude-3.5-sonnet`).<br>**Runtime Validation:** The extension validates this value at runtime against available GitHub Copilot models. If unavailable, it automatically falls back to `gpt-4o` with a notification.<br>**Recommended:** Use the `Swark: Select Language Model` command to see and select from all currently available models. |
-| `swark.fixMermaidCycles` | Automatically fix cycles in the generated Mermaid diagram to prevent rendering failures.                                                 |
+| Setting                            | Description                                                                                                                              |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `swark-continued.maxFiles`         | Max number of files to read.<br>The number of files read is also affected by the LLM max token limit.                                    |
+| `swark-continued.fileExtensions`   | List of file extensions to include in search.                                                                                            |
+| `swark-continued.excludePatterns`  | List of glob patterns to exclude from file search.<br>Defaults include: `**/.*` for hidden files, `**/node_modules/**` for node modules. |
+| `swark-continued.languageModel`    | Language model family to use for diagram generation (e.g., `gpt-4o`, `claude-3.5-sonnet`).<br>**Runtime Validation:** The extension validates this value at runtime against available GitHub Copilot models. If unavailable, it automatically falls back to `gpt-4o` with a notification.<br>**Recommended:** Use the `Swark Continued: Select Language Model` command to see and select from all currently available models. |
+| `swark-continued.fixMermaidCycles` | Automatically fix cycles in the generated Mermaid diagram to prevent rendering failures.                                                 |
 
 ## Release Notes
 
@@ -122,7 +137,7 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## Contributing
 
-Swark welcomes community contributions.
+Swark Continued welcomes community contributions.
 Please see our [Contribution Guide](CONTRIBUTING.md) for details on how to contribute.
 
 ## Privacy Notice
@@ -137,10 +152,12 @@ This extension collects telemetry data to help improve the product experience. T
 
 No source code, file contents, or personal information is ever included in the telemetry data.
 
-We use [@vscode/extension-telemetry](https://github.com/microsoft/vscode-extension-telemetry) module to collect this data. The data is sent to Azure Application Insights and is used solely to improve Swark's functionality and user experience.
+We use [@vscode/extension-telemetry](https://github.com/microsoft/vscode-extension-telemetry) module to collect this data. The data is sent to Azure Application Insights and is used solely to improve Swark Continued's functionality and user experience.
 
 You can disable telemetry collection by setting `"telemetry.telemetryLevel": "off"` in your VS Code settings.
 
 ## License
 
-Swark is licensed under the [GNU Affero General Public License v3.0](https://github.com/swark-io/swark/blob/main/LICENSE)
+Swark Continued is licensed under the [GNU Affero General Public License v3.0](LICENSE)
+
+This fork maintains the same AGPL-3.0 license as the [original Swark project](https://github.com/swark-io/swark/blob/main/LICENSE).

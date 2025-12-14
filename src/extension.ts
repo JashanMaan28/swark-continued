@@ -10,11 +10,11 @@ export function activate(context: vscode.ExtensionContext): void {
 }
 
 function registerCommands(context: vscode.ExtensionContext): void {
-    const architectureCommand = vscode.commands.registerCommand("swark.architecture", async () => {
+    const architectureCommand = vscode.commands.registerCommand("swark-continued.architecture", async () => {
         await CreateArchitectureCommand.run();
     });
 
-    const selectModelCommand = vscode.commands.registerCommand("swark.selectModel", async () => {
+    const selectModelCommand = vscode.commands.registerCommand("swark-continued.selectModel", async () => {
         await SelectModelCommand.run();
     });
 
