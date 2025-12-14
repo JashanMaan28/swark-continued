@@ -1,7 +1,7 @@
 {
     "name": "swark-continued",
     "displayName": "Swark Continued",
-    "description": "Create architecture diagrams from code automatically using LLMs (Community-maintained fork of Swark)",
+    "description": "Create architecture diagrams from code automatically using LLMs (Community-maintained fork of Swark)\n\n⭐ If you find Swark Continued useful, consider leaving a review on the VS Code Marketplace.Feedback helps guide future improvements and keeps the project moving forward.",
     "version": "1.5.0",
     "publisher": "JashanMaan28",
     "icon": "assets/logo/swark-icon.png",
