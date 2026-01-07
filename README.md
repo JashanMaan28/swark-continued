@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/JashanMaan28/swark-continued">
-    <img alt="Swark Continued logo" src="assets/logo/swark-continued-icon.png" width="128" style="background-color: #0e1318; border-radius: 50%;">
+    <img alt="Swark Continued logo" src="assets/logo/swark-continued-icon.png" width="128" border-radius: 50%;">
   </a>
 </h1>
 
