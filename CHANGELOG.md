@@ -25,6 +25,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   N/A
 
+## [1.5.1](https://github.com/JashanMaan28/swark-continued/releases/tag/v1.5.1) - 2026-01-06
+
+### Changed
+
+- Rewrite extension description.
+- Added "What's Different from Swark" section in `README.md`.
+- Changed swark logo upon VS Marketplace team request.
+
 ## [1.5.0](https://github.com/JashanMaan28/swark-continued/releases/tag/v1.5.0) - 2025-12-13
 
 ### Added

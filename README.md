@@ -1,10 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/JashanMaan28/swark-continued">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/logo/swark-logo-dark-mode.png">
-      <source media="(prefers-color-scheme: light)" srcset="assets/logo/swark-logo-light-mode.png">
-      <img alt="Swark Continued logo" src="assets/logo/swark-logo-light-mode.png" width="30%">
-    </picture>
+    <img alt="Swark Continued logo" src="assets/logo/swark-continued-icon.png" width="128" style="background-color: #0e1318; border-radius: 50%;">
   </a>
 </h1>
 
@@ -54,6 +50,13 @@ Swark Continued is **directly integrated with GitHub Copilot**, and requires no 
 -   🔑 **Seamless Integration**: Swark Continued integrates directly with GitHub Copilot. No additional setup, authentication, or API keys required.
 -   🛡️ **Privacy First**: Your source code is shared only with GitHub Copilot — no other external APIs or providers involved.
 -   🧜‍♀️ **Mermaid.js**: Swark Continued generates diagrams in Mermaid.js, a popular diagram-as-code framework. You can edit and refine the diagrams as needed.
+
+### What's Different from Swark?
+
+- Ongoing maintenance and dependency updates
+- Bug fixes not yet merged upstream
+- Experimental enhancements and quality-of-life improvements
+
 
 ### Use Cases
 
