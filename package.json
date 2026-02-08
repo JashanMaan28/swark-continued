@@ -2,7 +2,7 @@
     "name": "swark-continued",
     "displayName": "Swark Continued",
     "description": "An independently maintained fork of the original Swark extension, adding improvements, fixes, and optional enhancements.\n\n⭐ If you find Swark Continued useful, consider leaving a review on the VS Code Marketplace. Feedback helps guide future improvements and keeps the project moving forward.",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "publisher": "JashanMaan28",
     "icon": "assets/logo/swark-continued-icon.png",
     "license": "SEE LICENSE IN LICENSE",
