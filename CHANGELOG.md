@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **Note**: This is a community-maintained fork of the original [Swark project](https://github.com/swark-io/swark). Changes below this line are specific to the fork.
 
-## [Unreleased] - Swark Continued
+## [Unreleased] - Swark Continued (Next)
 
 ### Added
 
@@ -24,6 +24,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 -   N/A
+
+## [1.5.2] - Swark Continued
+
+### Added
+
+-   N/A
+
+### Changed
+
+-   N/A
+
+### Fixed
+
+-   Updated extension dependency from GitHub Copilot to GitHub Copilot Chat.
 
 ## [1.5.1](https://github.com/JashanMaan28/swark-continued/releases/tag/v1.5.1) - 2026-01-06
 
